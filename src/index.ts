@@ -11,10 +11,9 @@
  * Learn more at https://developers.cloudflare.com/workers/
  */
 
-import { load, Prolog } from "trealla";
-import tpl from "./libtpl-js.wasm";
+import { load, Prolog } from "trealla/unbundled";
 
-await load(tpl);
+await load();
 
 const pl = new Prolog();
 
